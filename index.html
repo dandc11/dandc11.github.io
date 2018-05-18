@@ -6,28 +6,80 @@
   <meta name="viewport" content="device=device-width, initial-scale=1.0">
   <title>Daniel Cole | Resume</title>
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Righteous" rel="stylesheet">
-  </head>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
 <body>
-    <h1">Hi</h1>
+  <div class="col rotate-right">
+    <h1>Salutations...</h1>
+  </div>
+  <p>
+    I'm Daniel, a junior software developer with a wide range of interests. I've worked on websites, podcasts and Windows apps,
+    but front end web development is my primary focus. More broadly, design is a preoccupation of mine, and I'm always interested
+    in exploring how people think about and interact with technology.
+  </p>
+  <h2>A few things I've worked on include...</h2>
+  <div class="container">
+    <section class="col rotate-left">
+      <h3>Give Back Memphis</h3>
       <p>
-        My name is Daniel, and I'm a software developer with a wide range of interests.
-        I've worked on websites, podcasts and Windows apps, but I'm currently focused on learning web development.
-        More broadly, design is a preoccupation of mine, and I'm always interested in exploring how
-        people think about and interact with technology.
+        I designed and deployed a site for this local nonprofit. Check it out.
       </p>
-   <h2>Things I've worked on...</h2>
-   <section>
-     <h3>Give Back Memphis (web development)</h3>
-     <p>
-       Give Back Memphis is a Memphis nonprofit organization dedicated to providing other local nonprofits with experienced,
-       pro bono consultants. They needed a web presence that could communicate their vision and process, but one that was also
-       in keeping with their local scale and spirit. To that end, I built them a custom Wordpress site with just
-       the right fit. The majority of my work involved UX, design,
-       <!-- img1  Discuss site?-->
-       <!-- img2 -->
-     </p>
-   </section>
-    <section>
-      <h3>WordFeast (.NET Windows App)</h3>
+      <button class="btn" id="gbmModalBtn">More Info</button>
     </section>
+    <section class="col rotate-right">
+      <h3>WordFeast</h3>
+      <p>
+        WordFeast is a side project I'm building to get better acquainted with ASP.NET Razor Pages apps. In essence, it's a readers' database with a nice interface, but it has a few other bells and whistles. Take a look.
+      </p>
+      <button class="btn" id="wordfeastModalBtn">More Info</button>
+    </section>
+  </div>
+  <div id="gbm-modal" class="modal">
+    <div class="modal-content">
+      <section class="modal-header">
+        <span id="gbm-close" class="close">&times;</span>
+        <h2>Give Back Memphis</h2>
+      </section>
+      <div class="modal-body">
+        <p>Give Back Memphis is an organization that provides pro bono consulting to locol nonprofits. They needed a web presence
+          that could communicate their vision and process, but one that was also in keeping with their local scale and spirit.
+        </p>
+        <img src="GBM_Landing.JPG" class="modal-image" title="Give Back Memphis Landing Page" alt="Give Back Memphis Landing Page">
+        <p>
+          After we determined that Wordpress was thier best option, I created a child theme. The coding on this project was rather light—mainly CSS and a little PHP—but 
+          I learned a lot about UX and iterative design by going through the process with this client.
+        </p>
+        <img src="GBM_Process.JPG" class="modal-image" title="Give Back Memphis Process Page" alt="Give Back Memphis Process Page">
+        <!-- img2 -->
+      </div>
+
+    </div>
+  </div>
+  <div id="wordfeast-modal" class="modal">
+    <div class="modal-content">
+      <section class="modal-header">
+        <span id="wf-close" class="close">&times;</span>
+        <h2>WordFeast</h2>
+      </section>
+      <div class="modal-body">
+        <p>WordFeast is my attempt to build something similar to GoodReads, but with an emphasis on personal utility rather
+          than social sharing. As an avid reader, it gave me a chance to build something exciting while expanding my knowledge
+          of ASP.NET, C#, SQL Server, HTML, CSS, Javascript and using APIs. You can check out my progress in these short
+          videos, or take a look on <a href="https://github.com/dandc11/BookDbApp" rel="github page">github</a>.
+          <video width="320" height="240">
+              <source src="WordFeast_1.mp4" type="video/mp4">
+              <source src="WordFeast_2.mp4" type="video/mp4">
+
+            </video>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <!--flex container end-->
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
 </html>
