@@ -9,32 +9,31 @@ var gbmBtn = document.getElementById("gbmModalBtn");
 var wfBtn = document.getElementById("wordfeastModalBtn");
 
 // Open modals
-gbmBtn.onclick = function() {
+gbmBtn.onclick = function () {
     gbmModal.style.display = "block";
 }
 
-wfBtn.onclick = function() {
+wfBtn.onclick = function () {
     wfModal.style.display = "block";
 }
 
 // Close button
-gbmClose.onclick = function() {
+gbmClose.onclick = function () {
     gbmModal.style.display = "none";
 }
 
-wfClose.onclick = function() {
+wfClose.onclick = function () {
     wfModal.style.display = "none";
 }
-
-// Close up
-window.onclick = function(event) {
-    if (event.target == gbmModal) {
-        gbmModal.style.display = "none";
-    }
-} 
-
-window.onclick = function(event) {
+window.addEventListener('click', function(event) {
     if (event.target == wfModal) {
         wfModal.style.display = "none";
     }
-} 
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target == gbmModal) {
+        gbmModal.style.display = "none";
+    }
+});
+

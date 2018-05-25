@@ -10,31 +10,69 @@
 </head>
 
 <body>
-  <div class="col rotate-right">
-    <h1>Salutations...</h1>
+  <div class="wrapper">
+    <div id="title">
+      <h1>Hi...</h1>
+    </div>
+    <p>
+      I'm Daniel, a junior software developer with an abiding interest in design and user experience. My primary focus is front-end web development; however, I've also studied back-end languages such as C#, Java and C++. I'm If you like,
+      you can grab my
+      <a href="/Daniel Cole Resume.docx" download>resume</a>
+      or get in touch at dancole@zoho.com.
+    </p>
+    <h2>A few things I've worked on...</h2>
   </div>
-  <p>
-    I'm Daniel, a junior software developer with a wide range of interests. I've worked on websites, podcasts and Windows apps,
-    but front end web development is my primary focus. More broadly, design is a preoccupation of mine, and I'm always interested
-    in exploring how people think about and interact with technology.
-  </p>
-  <h2>A few things I've worked on include...</h2>
-  <div class="container">
-    <section class="col rotate-left">
+  <div class="flex-container">
+    <!--flex container start-->
+    <section class="col left">
       <h3>Give Back Memphis</h3>
       <p>
         I designed and deployed a site for this local nonprofit. Check it out.
       </p>
       <button class="btn" id="gbmModalBtn">More Info</button>
     </section>
-    <section class="col rotate-right">
+    <section class="col right">
       <h3>WordFeast</h3>
       <p>
-        WordFeast is a side project I'm building to get better acquainted with ASP.NET Razor Pages apps. In essence, it's a readers' database with a nice interface, but it has a few other bells and whistles. Take a look.
+        WordFeast is a web app I made for fun and practice with ASP.NET Razor Pages. Take a look.
       </p>
       <button class="btn" id="wordfeastModalBtn">More Info</button>
     </section>
   </div>
+  <div id="wordfeast-modal" class="modal">
+      <div class="modal-content">
+        <section class="modal-header">
+          <span id="wf-close" class="close">&times;</span>
+          <h2>WordFeast</h2>
+        </section>
+        <div class="modal-body">
+          <p>This app lets users keep track of the books they've read, similar to GoodReads. Working on it gives me a chance to
+            improve with full stack development, including</p>
+          <div class="list">
+            <ul>
+              <li>ASP.NET</li>
+              <li>C#</li>
+              <li>SQL Server</li>
+              <li>Bootstrap</li>
+              <li>JQuery</li>
+              <li>CSS</li>
+              <li>APIs</li>
+              </ui>
+          </div>
+          <p>
+            You can check out my progress in these short videos, or take a look on
+            <a href="https://github.com/dandc11/BookDbApp" rel="github page">github</a>.
+          </p>
+          <caption>Back-end</caption>
+          <iframe width="280" height="145" src="https://www.youtube-nocookie.com/embed/qpsXletbBU8?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+          <caption>Front-end</caption>
+          <iframe width="280" height="145" src="https://www.youtube.com/embed/1hk37XXtC_4" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+  
+        </div>
+      </div>
+    </div>
   <div id="gbm-modal" class="modal">
     <div class="modal-content">
       <section class="modal-header">
@@ -42,41 +80,24 @@
         <h2>Give Back Memphis</h2>
       </section>
       <div class="modal-body">
-        <p>Give Back Memphis is an organization that provides pro bono consulting to locol nonprofits. They needed a web presence
-          that could communicate their vision and process, but one that was also in keeping with their local scale and spirit.
+        <p>This nonprofit needed a web presence that could communicate their mission, but one that was also concise and in keeping
+          with their local focus. Through a few iterations of design and feedback, I found something with the right touch,
+          then got them up and running with a custom Wordpress site.
         </p>
-        <img src="GBM_Landing.JPG" class="modal-image" title="Give Back Memphis Landing Page" alt="Give Back Memphis Landing Page">
+        <a target="_blank" href="GBM_Landing.jpg">
+          <img src="GBM_Landing.JPG" class="modal-image" title="Give Back Memphis Landing Page" alt="Give Back Memphis Landing Page">
+        </a>
         <p>
-          After we determined that Wordpress was thier best option, I created a child theme. The coding on this project was rather light—mainly CSS and a little PHP—but 
-          I learned a lot about UX and iterative design by going through the process with this client.
+          Though this project was rather light on coding—mainly CSS and a little PHP—I learned a lot by going through the design process
+          with this client.
         </p>
-        <img src="GBM_Process.JPG" class="modal-image" title="Give Back Memphis Process Page" alt="Give Back Memphis Process Page">
+        <a target="_blank" href="GBM_Process.JPG">
+          <img src="GBM_Process.JPG" class="modal-image" title="Give Back Memphis Process Page" alt="Give Back Memphis Process Page">
+        </a>
         <!-- img2 -->
       </div>
 
     </div>
-  </div>
-  <div id="wordfeast-modal" class="modal">
-    <div class="modal-content">
-      <section class="modal-header">
-        <span id="wf-close" class="close">&times;</span>
-        <h2>WordFeast</h2>
-      </section>
-      <div class="modal-body">
-        <p>WordFeast is my attempt to build something similar to GoodReads, but with an emphasis on personal utility rather
-          than social sharing. As an avid reader, it gave me a chance to build something exciting while expanding my knowledge
-          of ASP.NET, C#, SQL Server, HTML, CSS, Javascript and using APIs. You can check out my progress in these short
-          videos, or take a look on <a href="https://github.com/dandc11/BookDbApp" rel="github page">github</a>.
-          <video width="320" height="240">
-              <source src="WordFeast_1.mp4" type="video/mp4">
-              <source src="WordFeast_2.mp4" type="video/mp4">
-
-            </video>
-        </p>
-      </div>
-
-    </div>
-  </div>
   </div>
   <!--flex container end-->
   <script src="script.js" type="text/javascript"></script>
