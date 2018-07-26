@@ -68,6 +68,11 @@ a:hover {
     color: rgb(10, 112, 160);
 }
 
+.codepen {
+ width: 32px;
+ height: 32px;
+}
+
 
 /******************************************************
 Modal Styles
